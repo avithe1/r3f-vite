@@ -9,8 +9,10 @@
   "dependencies": {
     "@react-three/drei": "^9.56.27",
     "@react-three/fiber": "^8.11.5",
+    "facefilter": "^3.3.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "sass": "^1.63.6",
     "three": "^0.150.0",
     "three-mesh-ui": "^6.5.4"
   },

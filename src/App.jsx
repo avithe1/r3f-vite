@@ -1,24 +1,25 @@
-import { useRef, useState } from 'react'
-import { OrbitControls, TorusKnot } from '@react-three/drei'
-import { Canvas, useFrame, extend } from '@react-three/fiber'
-import Button from './Button'
-import ThreeMeshUI from 'three-mesh-ui'
-import * as THREE from 'three'
+// import { useRef, useState } from 'react'
+// import { OrbitControls, TorusKnot } from '@react-three/drei'
+// import { Canvas, useFrame, extend } from '@react-three/fiber'
+// import Button from './Button'
+// import ThreeMeshUI from 'three-mesh-ui'
+// import * as THREE from 'three'
 
-extend(ThreeMeshUI)
+//extend(ThreeMeshUI)
+
+import AppCanvas from "./js/components/AppCanvas"
 
 export default function App() {
   return (
-    <Canvas style={{ position: 'fixed', inset: 0 }}>
-      <color attach="background" args={['black']} />
-      <OrbitControls />
-      {/* <Thing /> */}
-      <Panel />
-    </Canvas>
+    <AppCanvas />
+    // <Canvas style={{ position: 'fixed', inset: 0 }}>
+    //   <color attach="background" args={['black']} />
+    //   <OrbitControls />
+    //   {/* <Thing /> */}
+    //   <Panel />
+    // </Canvas>
   )
 }
-
-
 
 function Title({ accentColor }) {
   return (
